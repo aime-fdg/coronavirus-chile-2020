@@ -1,0 +1,830 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F0F0F0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*GENERAL*/
+
+main {
+	width: 100%;
+	max-width: 1280px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Header*/
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+#barra-superior {
+	width: 100%;
+	max-width: 1280px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 20px;
+}
+
+#barra-bienvenida {
+	width: 100%;
+	max-width: 1280px;
+}
+
+header #plan_de_accion {
+	margin: 20px 0;
+}
+
+nav {
+	width: 100%;
+	background-color: #060d37;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	align-items: center;
+	display: flex;
+	width: 100%;
+	height: 80px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: #F0F0F0;
+	padding: 10px 15px;
+	box-sizing: border-box;
+}
+
+nav a:hover {
+	color: #060d37;
+	background-color: #F0F0F0;
+}
+
+header section {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.cuerpo-encabezado {
+	flex-grow: 2;
+	flex-basis: 0;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url("img/unnamed.jpg");
+	background-position: center;
+	color: #f0f0f0;
+	text-align: right;
+	padding: 3%;
+	width: 100%;
+	box-sizing: border-box;
+}
+.cuerpo-encabezado button{
+	background-color: #FCC018;
+	font-family: 'Open Sans', sans-serif;
+	border: 0;
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 8px;
+	margin: 10px 0 50px 0;
+}
+
+.cuerpo-encabezado button:hover {
+	background-color: #8F6D0C;
+}
+
+.cuerpo-encabezado  img {
+	margin-bottom: 50px;
+}
+
+.cuerpo-encabezado-pap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url("img/unnamed.jpg");
+	background-position: center;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+	max-width: 1280px;
+	height: 250px;
+	margin: 0;	
+}
+
+.cuerpo-encabezado-pap img {
+	margin: 0;
+}
+
+h1 {
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 3.0em;
+	margin: 0;
+}
+
+.cuerpo-encabezado h2 {
+	margin: 0;
+}
+
+.hero {
+	height: auto;
+}
+
+#destacados {
+	flex-grow: 1;
+	background-color: #181933;
+	color: #f0f0f0;
+	text-decoration: none;
+	padding: 10px 40px;
+	flex-basis: 0;
+	
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+
+header h2 {
+	color: #f0f0f0;
+	padding: 0;
+	font-size: 2.5em;
+}
+
+#destacados_lista {
+	list-style: none;
+	padding: 0;
+}
+
+#destacados_lista li {
+		padding-bottom: 15px;
+}
+
+#destacados_lista a {
+	text-decoration: none;
+	color: #F0F0F0;
+}
+
+#destacados_lista a:hover {
+	text-decoration: underline;
+	color: #FCC018;
+}
+
+
+/*Articulos*/
+
+.informacion {
+	display: flex;
+	margin: 30px 0;
+}
+
+.margen_info_container {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.margen_info {
+	height: 614px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+
+#margen_info_index {
+	background-image: url("img/medidas-sanitarias-desktop.png");
+}
+
+#margen_info_salud {
+	background-image: url("img/salud-desktop.png")
+}
+
+#margen_info_pap {
+	background-image: url("img/banner-pasoapaso-desktop.png")
+}
+
+.margen_info h2 {
+	color: #228EC5;
+	font-weight: 700;
+	padding: 20px;
+	font-size: 2em;
+}
+
+article {
+	flex-grow: 2;
+	flex-basis: 0;
+	margin: 0 50px;
+}
+
+article >p{
+	font-weight: 700;
+	padding: 20px;
+}
+
+article .bloque_info {
+	padding: 15px 20px;
+	background-color: #E2F0FF;
+}
+
+h4 {
+	font-size: 1.5em;
+	color: #228EC5;
+	font-weight:600;
+	padding-inline-start: 40px;
+}
+
+#botonera-hospitales-desktop {
+	display: block;	
+}
+
+#botonera-hospitales-mobile {
+	display: none;
+}
+
+#botonera-hospitales-desktop ul , #botonera-hospitales-mobile ul{
+	list-style: none;
+}
+
+#botonera-hospitales-desktop button, #botonera-hospitales-mobile button {
+	background-color: #FCC018;
+	font-family: 'Open Sans', sans-serif;
+	border: 0;
+	font-weight: 700;
+	font-size: 0.9em;
+	border-radius: 8px;
+	height: 40px;
+	padding: 0 20px;
+	margin-bottom: 10px;
+}
+
+#botonera-hospitales-desktop button:hover, #botonera-hospitales-mobile button:hover {
+	background-color: #8F6D0C;
+}
+
+.bloques_info_list {
+	list-style: none;
+	padding: 0;
+}
+
+.bloques_info_list li {
+	margin: 20px 0;
+}
+
+.bloque_info h3 {
+	color: #228EC5;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.bloque_info ol {
+	padding: 0 40px;
+}
+
+.bloque_info > ol > li {
+	padding-top: 20px;
+	list-style-position: inside;	
+	
+}
+
+.bloque_info ul li {
+	padding: 0;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+.bloque_info li ol {
+	padding-inline-start: 40px;
+}
+
+.bloque_info span {
+	font-weight: 700;
+}
+
+.bloque_info a {
+	text-decoration: none;
+	color: #009DE3;
+}
+
+.bloque_info .aclaracion {
+	color: #fbb03b;
+	font-weight: 600;
+	font-style: italic;
+}
+
+
+/*Footer*/
+
+footer {
+	background-color: #060d37;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+footer div{
+	width: 100%;
+	max-width: 1280px;
+	display: flex;
+	flex-direction: column;
+	color: #f0f0f0;
+}
+
+#llame_salud {
+	width: 100%;
+	padding-left: 20px;
+	box-sizing: border-box;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #172890;
+}
+
+#llame_salud_img {
+	display: flex;
+	justify-content: flex-start;
+	margin: 20px 0;
+	height: auto;
+}
+
+#numero {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+footer p{
+	margin: 0 0 20px 0;
+}
+
+#final {
+	margin-top: 30px;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+/*INDEX*/
+
+#infografias {
+	color: #181933;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1280px;
+	padding: 0 5%;
+	box-sizing: border-box;
+}
+
+#infografias h3 {
+	font-size: 2em;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+#infografias h2 {
+	font-size: 2.7em;
+	margin: 0;
+	font-weight: 400;
+}
+
+#infografias p {
+	font-weight: 400;
+	font-size: 1.3em;
+	color: #E82E31;
+}
+
+#infografias ol {
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+
+.sublist-infografias {
+	padding-top: 10px;
+	font-weight: 500;
+	list-style: disc;
+}
+
+#infografias span {
+	font-weight: 700;
+}
+
+.contenedor_img {
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1280px;
+}
+
+.contenedor_img img {
+	height: auto;
+	max-height: 100%;
+	min-width: 0;
+}
+
+#infografias a {
+	text-decoration: none;
+	color: #228EC5;
+	font-weight: 700;
+	
+}
+
+#infografias a:hover {
+	text-decoration: underline;
+	color: #FCC018;
+}
+
+/*PASO A PASO*/
+
+#paso-a-paso {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#paso-a-paso > li {
+	width: 45%;
+}
+
+#paso-a-paso h4 {
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	padding: 0;
+}
+#paso-a-paso span {
+	font-weight: 700;
+}
+
+
+
+.contenedor_encabezado_pasos {
+	box-sizing: content-box;
+	font-weight: 700;
+	font-size: 1.5em;
+	
+	display: flex;
+	flex-direction: row;
+	background-color: red;
+	margin: 25px 0 0 0;
+}
+
+.contenedor_encabezado_pasos * {
+	margin: 0;
+	padding: 0;
+} 
+
+.numero_de_paso {
+	height: 75px;
+	width: 75px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.numero_de_paso p {
+	font-size: 0.5em;
+	font-weight: normal;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+.numero_de_paso h5 {
+	font-size: 1.17em;
+	margin: 0;
+	flex-basis: 0;
+	flex-grow: 5;
+}
+
+.encabezado-pasos {
+	padding: 20px 0 0 20px;
+}
+
+
+
+
+
+
+
+#paso1-cuarentena {
+	background-color: #f75c5c;
+	color: #f0f0f0;
+}
+#paso1-cuarentena .numero_de_paso {
+	background-color: #991717;
+}
+
+
+#paso2-transicion {
+	background-color: #ffbf00;
+	color: #bf7200;
+}
+#paso2-transicion .numero_de_paso {
+	background-color: #bf7200;
+	color: #F0f0f0;
+}
+
+#paso3-preparacion {
+	background-color: #fff200;
+	color: #a69b00;
+}
+#paso3-preparacion .numero_de_paso {
+	background-color: #a69b00;
+	color: #F0f0f0;
+}
+
+#paso4-inicial {
+	background-color: #338ad1;
+	color: #004680;
+}
+#paso4-inicial .numero_de_paso {
+	background-color: #004680;
+	color: #F0f0f0;
+}
+
+#paso5-avanzada {
+	background-color: #a7d1f2;
+	color: #4784b5;
+}
+#paso5-avanzada .numero_de_paso {
+	background-color: #4784b5;
+	color: #F0f0f0;
+}
+
+#paso-modo-covid {
+	background-color: #092c5a;
+	color: #f0f0f0;
+}
+#paso- .numero_de_paso {
+	background-color: #001c41;
+	color: #F0f0f0;
+}
+
+.contenido_pasos {
+	box-sizing: content-box;
+	padding: 20px 10px;
+	margin-top: 20px;
+}
+.contenido_pasos h4 {
+	color: inherit;
+}
+
+#prohibido-1 {
+	background-color: #ffe4e4;
+	color: #991717;
+}
+
+#prohibido-2 {
+	background-color: #ffe9a8;
+	color: #bf7200;
+}
+
+#prohibido-3 {
+	background-color: #fffaa0;
+	color: #a69b00;
+}
+
+#prohibido-4 {
+	background-color: #99cef8;
+	color: #004680;
+}
+
+#prohibido-5 {
+	background-color: #d8eeff;
+	color: #4784b5;
+}
+
+#prohibido-gral {
+	background-color:  #092c5a;
+	color: #f0f0f0;
+	
+}
+
+.contenido-pasos-permitido {
+	box-sizing: content-box;
+	padding: 20px 10px;
+	background-color: #e3f6d5;
+	margin-top: 20px;
+	color: #006837;
+}
+
+.contenido-pasos-permitido h4 {
+	color: inherit;
+}
+
+.contenido-pasos-funcionando {
+	box-sizing: content-box;
+	padding: 20px 10px;
+	background-color: #eff5fd;
+	margin: 20px 0;
+	color: #060d37;
+}
+.contenido-pasos-funcionando h4 {
+	color: inherit;
+}
+
+#contenedor-covid {
+	min-width: 75px;
+	background-image: url("img/covid.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #001c41
+}
+
+#contenedor-estrategia-covid {
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+
+#contenedor-estrategia-covid h3 {
+	font-size: 1em;
+	font-weight: normal;
+}
+#contenedor-estrategia-covid h4 {
+	font-size: 0.7em;
+	text-transform: none;
+	color: white;
+	font-weight: normal;
+	text-align: left;
+	margin: 18px 0;
+}
+
+#paso-modo-covid {
+	margin-bottom: 20px;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 800px) {
+	
+	
+	main > section {
+		width: 95%;
+	}
+
+	/*Header*/
+
+	#barra-superior img {
+		min-width: 0;
+		height: auto;
+		
+	}
+	
+	#barra-superior a {
+		max-width: 180px;
+		min-width: 0;
+	}
+	
+	#barra-superior a img {
+		min-width: 0;
+		height: auto;
+		width: 100%;
+	}
+	
+	header div {
+		width: 95%;
+	}
+	
+	header section {
+		width: 100%;
+		flex-direction: column;
+	}
+	
+	.cuerpo-encabezado {
+		height: 600px;
+	}
+	
+	.cuerpo-encabezado img {
+		max-width: 90%;
+	}
+	
+	.cuerpo-encabezado-pap #familia {
+	display: none;
+	}
+	
+	/*artículos*/
+	
+	.informacion {
+		flex-direction: column;
+	}
+	
+	.margen_info {
+		background-size: contain;
+		background-position: bottom;
+		height: 200px;
+	}
+	
+	#margen_info_index {
+		background-image: url("./img/medidas-sanitarias.png");
+	}
+	
+	#margen_info_salud {
+		background-image: url("img/salud-mobile.png");
+	}
+	
+	#margen_info_pap {
+	background-image: url("img/banner-pasoapaso-mobile.png");
+	}
+	
+	article {
+	margin: 0 5px;
+	}
+	
+	article .bloque_info {
+		padding: 25px 30px;
+		background-color: #E2F0FF;
+	}
+	
+	.bloque_info ol {
+		padding: 0;
+	}
+	
+	.bloque_info #padded {
+		padding: 0 0 0 30px;
+	}
+
+	#botonera-hospitales-mobile {
+	display: block;
+    }
+
+    #botonera-hospitales-desktop {
+	display: none;
+	}
+
+	
+	/*Footer*/
+	
+	footer div {
+		width: 85%;
+	}
+	
+	footer img {
+		max-width: 100%;
+		min-width: 0;
+	}
+	
+	#mapa_de_sitio {
+		flex-direction: column;
+		
+	}
+	
+	/*INDEX*/
+	
+	#infografias h3{
+		font-size: 1.5em;
+	}
+	
+	#infografias h2 {
+		font-size: 2em;
+	}
+
+	
+	.contenedor_img {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.contenedor_img img {
+		max-width: 100%;
+		
+	}
+	
+	/*PASO A PASO*/
+
+	#paso-a-paso {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#paso-a-paso li {
+		width: 100%;
+	}
+}
+	
